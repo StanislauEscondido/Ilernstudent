@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #e1e4e7;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 999;
+
+}
+#navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color:black;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+#navbar li a:hover{
+    color: rgb(12, 128, 173);
+
+}
+
+#about{
+    padding-right: 50px;
+    position: relative;
+}
+#about li{
+    list-style: none;
+    padding: 4px 24px;
+    border-radius: 22px;
+    background: #1E79E4;
+    transition: 0.2s ease;
+    
+}
+#about li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+#about li:hover{
+    background: #3a5170;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+}
+
+#cardflow{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    overflow-x:  scroll;
+   
+  
+}
+
+#cardflow::-webkit-scrollbar {
+        display: none;
+      }
+
+
+      
+#cardflow .card1{
+    /* display: block; */
+    /* width: 43%; */
+    min-width: 600px;
+    padding: 10px 80px;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background: #3a5170;
+    /* background: rgb(190, 190, 190); */
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+    position: relative; 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+#cardflow .card1:hover{
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+ #cardflow .card1 img{
+    width: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+#cardflow .card1 .sliderimg{
+    width: 43%;
+    position: absolute;
+    top: 0px;
+    bottom: 20px;
+    left: 20px;
+        
+}
+#cardflow .card1 .sliderimg1{
+    width: 60%;
+    position: absolute;
+    top: 0px;
+    bottom: 20px;
+   
+        
+}
+ #cardflow .card1 .card-elements{
+  text-align: start; 
+  width: 40%;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+#cardflow .card1 .card-elements h2{
+font-size: 25px;
+color: aliceblue;
+}  
+#cardflow .card1 .btn{
+    cursor: pointer;
+    width: 80px;
+    height: 28px;
+    line-height: 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    right: 30px;
+    top: 200px;
+    position: absolute;
+    background: #1E79E4;
+    color: #e1e4e7;
+    transition: 0.4s ease;
+    
+}
+#cardflow .card1 .btn:hover{
+    background: #3574bd;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+}
+
+
+/* mobile Meno******************************* */
+.mobileicon{
+  display: none;
+  
+}
+
+.mobile-menu{
+    display: none ;
+}
+
+
+
+/* *************************tab ***************** */
+
+
+
+#downcontent{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+#downcontent .maincard{
+     display: flex;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+
+    
+
+}
+#downcontent .inside{
+    width: 170px;
+   position: relative;
+   
+
+}
+#downcontent .main1{
+   display: flex;
+    width: 200px;
+    height: 190px;
+    background: #bdcbdf;
+    /* background-color: #0a88a4; */
+    justify-content: center;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease-in-out;
+       
+}
+#downcontent .main1:hover{
+    background-color: #aebed3;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.inside .cardimg{
+    margin-top: 20px;
+    width: 170px;
+}
+.inside button {
+    cursor: pointer;
+    width: 120px;
+    height: 34px;
+    line-height: 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50%;
+    transform: translate(-50%, -50%); 
+    /* background: #afb9c7; */
+    background: none;
+    color: #e1e4e7;
+    transition:   0.2s ease-in-out;
+    visibility: hidden;
+    margin-top: 50px;
+
+}
+.inside:hover button{
+    visibility:  visible;
+   margin-top: 10px;
+   background: #3a5170;
+}
+.inside button:hover{
+    background: #1E79E4;
+}
+
+.inside .textocard{
+    position: absolute;
+    top: 150px;
+    color: #3a5170;
+    font-weight: 700;
+    font-size: 19px;
+    transition: 0.3s ease-in-out;
+     left: 50%; /* because the position is calculated from the top left corner. */
+    transform: translate(-50%, -50%); /* pulling back the item with the half of its width and height. */
+}
+
+.inside:hover .textocard{
+    display: none;
+    position: absolute;
+    top: 20px;
+}
+
+@media screen and (max-width: 900px){
+    
+    #navbar{
+        display: none;
+    }
+    .navbar-mobile li{
+        display: none;
+        
+    }
+    #about{
+        display: none;
+    }
+    .mobile-menu{
+        background: #b0b9b9;
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        right: 0;
+        transform: translate(0, 0);
+        height: 500px;
+        z-index: 910;
+    }
+
+    .mobileicon {
+        display: block;
+        position: absolute;
+        right: 50px;
+        z-index: 999;
+       
+    }
+    .mobileicon button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+    
+    
+    .mobile-menu #navbar-mobile{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 200px;
+        z-index: 900;
+        width: 100%;
+        align-items: center;
+        padding: 70px 70px;
+        list-style: none;  
+
+    }
+    #navbar-mobile li a{
+        display: flex;
+        padding-top: 1rem;
+        text-decoration: none;
+        color: black;
+        /* font-size: 17px; */
+        font-weight: 500;
+        justify-content: start;
+
+    }
+    
+  
+    #abouto li{
+     padding-top: 0.5rem;
+    }
+    #abouto li a{
+    background: #1E79E4;
+    width: 90px;
+    justify-content: center;
+    height: 35px;
+    padding-top: 0px;
+    line-height: 35px;
+    border-radius: 30px;
+    color: white;
+    }
+    #abouto li:hover{
+        background: #099e92;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+    }
+    #header {
+
+        display: flex;
+        justify-content: center;
+        /* background: #d8d9da; */
+      }
+   
+   
+    .open{
+        display: block;
+    }
+    #downcontent .maincard{
+        margin-top: 20px;
+        gap: 40px;
+    }
+
+  
+    
+    #downcontent .main1{
+        min-width: 150px;
+           height: 150px;
+    }
+    .inside .textocard{
+        top: 170px;
+        font-size: 15px;
+        
+    }
+    .inside button {   
+        width: 100px;
+        height: 34px;
+    
+}
+}
+@media screen and (max-width: 668px){
+
+    #cardflow .card1{
+        width: 100%;
+        min-width: 400px;
+        height: 180px;
+        position: relative;;
+        right: 25px;
+
+    }
+    #cardflow .card1 img{
+        width: 50%;
+        top: 25px;
+}
+#cardflow .card1 .card-elements{
+    top: 28px;
+  }
+#cardflow .card1 .card-elements h2{
+    font-size: 18px;
+    margin-top: 15px;
+    } 
+    #cardflow .card1 .btn{
+        width: 40px;
+        height: 16px;
+        line-height: 15px;
+        font-size: 10px;
+        right: 30px;
+        top: 80%;
+    }
+    
+
+}
