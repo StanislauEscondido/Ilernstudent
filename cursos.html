@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        
+        <span><a class="logo" href="index.html">PreStudent</a></span>
+        <nav>
+        <ul class="nav_menu">
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="blog.html">Blog</a></li>
+
+        </ul>
+        </nav>
+         <button class="sobre">Sobre</button>
+
+
+        <!---------------Mobile menu--------------->
+
+        <div class="mobileicon">
+       <button onclick="showMenu()"> <img class="icon" src="src/icons/more.png"  width="40px" height="40px" ></button>
+        </div>
+        <div class="mobile-menu">
+        <ul id="navbar-mobile">
+            <!-- <li><a href="home.html">Home</a></li> -->
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            <div id="abouto">
+                <li class="butto"><a href="#">Sobre</a></li>
+            </div>
+        </ul>
+       
+        
+        </div>
+
+    </header>
+    <section id="downcontent">
+
+        <div class="texto">
+            <h2>O que você deseja?</h2>
+        </div>
+        <div class="textoCiencia">
+            <h2>O que é Ciencia?</h2>
+            <div class="descript">
+                <p> <strong>Ciência</strong> é um conjunto de <strong>sistemáticos</strong>  e <strong>impíricos</strong> obtidos através de observação, experimentação e <strong>análise crítica</strong>, que buscam <strong>explicar e compreender </strong>o mundo natural e social. A ciência utiliza métodos rigorosos e testáveis para investigar e explicar fenômenos, e busca sempre aprimorar o conhecimento através de novas descobertas e revisão constante das teorias existentes. A ciência é uma das principais ferramentas que a humanidade utiliza para avançar em sua compreensão do mundo e desenvolver tecnologias que melhorem a qualidade de vida.</p>
+            </div>
+        </div>
+
+
+        <div class="maincard">
+          
+            <div id="ab" class="main1"><!--Principal Categoria -->
+                <div class="inside">
+                    <p class="textocard">CIÊNCIAS</p>
+                    <img class="cardimg" src="src/ilIustrations cards/ciencia.svg" alt="">
+                    <button id="btn" > Ver </button>
+                </div>
+            </div>
+    
+                        <!-- Categoria cienciencia -->
+                        <div id="aa" class="mainhidden">
+                            <div  class="inside">
+                                <p class="textocard">CIÊNCIAS HUMANAS</p>
+                                <img class="cardimg" src="src/ilIustrations cards/human3.svg" alt="">
+                                <button id="poup"> Ver </button>
+                            </div>
+                        </div>
+                        <div id="aab" class="mainhidden">
+                            <div  class="inside">
+                                <p class="textocard">CIÊNCIAS CONTABEIS</p>
+                                <img class="cardimg" src="src/ilIustrations cards/conta.svg" alt="">
+                                <button> Ver </button>
+                            </div>
+                        </div>
+                        <div id="aabb" class="mainhidden">
+                            <div  class="inside">
+                                <p class="textocard">CIÊNCIAS BIOLOGICAS</p>
+                                <img class="cardimg" src="src/ilIustrations cards/biology.svg" alt="">
+                                <button> Ver </button>
+                            </div>
+                        </div>
+
+
+                        <!-- the popup -->
+                        <div id="aba" class="pup">
+                            <h2 class="janela">CIÊNCIAS HUMANAS</h2>
+                            <div  class="janelas">
+                                
+                                
+                            </div>
+                        </div>
+
+
+            
+            <div id="bb" class="main1"><!--Principal Categoria -->
+                <div class="inside">
+                    <p class="textocard">ENGENHARIA</p>
+                    <img class="cardimg" src="src/ilIustrations cards/Engen.svg" alt="">
+                    <button>Ver</button>
+                </div>   
+            </div>
+
+
+            <div id="ba" class="main1"> <!--Principal Categoria -->
+                <div class="inside">
+                    <p class="textocard">EDUCAÇÃO</p>
+                    <img class="cardimg" src="src/ilIustrations cards/education.png" alt="">
+                    <a href="#"><button>Ver</button></a>
+                </div>
+            </div>
+           
+        </div>
+     <div id="quiz" class="quiz">
+               <p>quiz</p> 
+               <span><img class="immg" src="src/ilIustrations cards/right-arrow.png" alt=""></span>
+            </div>
+
+            <div id="voltar" class="voltar">
+                <span id="volt"><img  class="imm" src="src/ilIustrations cards/right-arrow.png" alt=""></span>
+                <p>voltar</p> 
+                
+       </section>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
